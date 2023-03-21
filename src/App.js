@@ -8,10 +8,10 @@ function App() {
         <Route path="/abot-us">
           <h1>Hello</h1>
         </Route>
-        <Route path="/movie/:id">
+        <Route path={process.env.PUBLIC_URL + "/movie/:id"}>
           <Detail />
         </Route>
-        <Route path="/">
+        <Route path={process.env.PUBLIC_URL + "/"}>
           <Home />
         </Route>
       </Switch>
