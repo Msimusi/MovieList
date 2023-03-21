@@ -15,9 +15,9 @@ function Detail() {
 
   return (
     <div>
-      <Link to="/">Home</Link>
+      <Link to={`${process.env.PUBLIC_URL}/`}>Home</Link>
       <h1>{movie.title}</h1>
-      <img src={movie.medium_cover_image} />
+      <img alt={movie.title} src={movie.medium_cover_image} />
       <br></br>
       <span>rates : {movie.rating}</span>
       <br></br>
